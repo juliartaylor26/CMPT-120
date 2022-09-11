@@ -5,8 +5,9 @@
 
 def main():
     print("Hello World!")
-
+    color = "red"
+    print("My favorite color is" , color)
+    bd = "01282004"
+    print("My birthday is", bd)
 
 main()
-
-    print("Hello World!")
