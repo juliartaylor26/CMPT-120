@@ -9,7 +9,7 @@
 
 #additional instructions: instead of setting our variable to 10, what if we asked the user for the variable and used that value in our comparisons?
 def main():
-    num = input("Give me number between 5 and 15:")
+    num = input("Give me a number between 5 and 15:")
     num = int(num)
     if num > 12:
         print(num, "is greater than 12")
