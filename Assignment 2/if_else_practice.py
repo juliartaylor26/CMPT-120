@@ -5,5 +5,13 @@
 #The else should read: Else print out "10 is less than 10"
 
 def main():
-
+    Johnny = 10
+    if Johnny > 12:
+        print("10 is greater than 12")
+    elif Johnny > 11:
+        print("10 is greater than 11")
+    elif Johnny == 10:
+        print("10 is equal to 10")
+    else:
+        print("10 is less than 10")
 main()
