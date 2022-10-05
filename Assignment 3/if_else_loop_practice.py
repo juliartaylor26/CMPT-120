@@ -11,6 +11,16 @@ else (the number is less than 5)
 '''
 
 def main():
-    
+    telisto = [1, 28, 4, 8, 4, 5, 21, 28]
+    for x in telisto:
+        if x > 35:
+            print("greater than 35")
+        elif 20 < x < 35:
+            print("between 20-35")
+        elif 5 < x < 20:
+            print("between 5 and 20")
+        else:
+            print("the number is less than 5")
+
     
 main()

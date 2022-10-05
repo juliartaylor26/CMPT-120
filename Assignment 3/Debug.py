@@ -4,6 +4,8 @@ def main():
     for x in range(8):
         print("Hello")
 
+
+
     print("________")
 
     #What about as a while loop?
@@ -31,27 +33,31 @@ def main():
         endless = endless + 1
     
     #print out your last name one letter at a time
-    for x in "":
-        print(?)
+    for x in "Taylor":
+        print(x)
        
      #aw i suck i made another infinite loop.. use that thing I taught you about to get out once it prints once... starts with a b... br....
-    found == False    
+    found = False
     while found == False:
         print("i only printed once")
-        
+        break
+
     #can you fill this out so that it prints found when it hits the letter r?
-    for x in "Marist":
-        if ? == ?:
+    for z in "Marist":
+        if z == "r":
             print("found")
+            break
+
     
-    numbers = [1,2,3,4,5,6,7,8,9,10]
+    numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     #you could print out the list using print(numbers) OR you could go the long way and use a for loop to print out the value of each index :)
-    for x in ?:
-        print(?[?])
+    for h in range(len(numbers)):
+        print(numbers[h])
     
     #what if I wanted you to print out only the even numbers in this range I made?
-    for x in range (20, 501):
+    for p in range(20, 501):
         #i feeeeel like modulooooooo is neededddd
-        if
+        if p %2 == 0:
+            print(p)
     
 main()
