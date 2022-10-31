@@ -8,14 +8,14 @@ def main():
         
     #can you google and find what function you should use to check if it's numeric (an int?)?
     intInput = input("enter an int")
-    if intInput.isdigit:
+    if intInput.isdigit():
         print("int!")
     else:
         print("not int :(")
     
     #what about if it's both letters and numbers?
     alphIntInput = input("Enter letters and numbers")
-    if alphIntInput.isalnum:
+    if alphIntInput.isalnum():
         print("Letters and numbers!")
     else:
         print("weird characters :(")
@@ -41,7 +41,7 @@ def main():
     #do the live example we did in class: ask user to input an integer, but before you cast it to an int,
     #check that it's an integer before doing your variable = int(variable) command
     wantInt = input("Enter an integer")
-    if wantInt.isdigit:
+    if wantInt.isdigit():
         wantInt = int(wantInt)
         print(wantInt)
     else:
