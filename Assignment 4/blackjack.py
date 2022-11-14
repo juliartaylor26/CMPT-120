@@ -1,30 +1,24 @@
-#if you don't know how to play blackjack, tbh not super important but look it up anyway LOL
-#this script is going to require some googling: I want you to practice using your resources with this one.
-# But of course if you get stuck, reach out :)
-'''instructions: randomly generate three values between 1 and 11. in the function bust: add these three numbers
-together.
-if they add up to or less than 21, return the sum. If it's over 21, return 0. If it's over 21 BUT there's an 11
-as one of the values, return the sum - 10. '''
-
 import random
 
+
 def bust(first, second, third):
-    sum = first + second + third
-    if sum <= 21:
-        return(sum)
-    elif sum > 21:
-        return(0)
-    elif sum > 21 and (first == 11 or second == 11 or third == 11):
-        return(sum - 10)
+    total = first + second + third
+    if total <= 21:
+        return total
+    elif total > 21:
+        return 0
+    elif total > 21 and (first == 11 or second == 11 or third == 11):
+        return total - 10
 
 
 def main():
-    firstNumber = random.randint(1, 11)
-    print(firstNumber)
-    secondNumber = random.randint(1, 11)
-    print(secondNumber)
-    thirdNumber = random.randint(1, 11)
-    print(thirdNumber)
-    print(bust(firstNumber, secondNumber, thirdNumber))
+    first_number = random.randint(1, 11)
+    print(first_number)
+    second_number = random.randint(1, 11)
+    print(second_number)
+    third_number = random.randint(1, 11)
+    print(third_number)
+    print(bust(first_number, second_number, third_number))
+
 
 main()

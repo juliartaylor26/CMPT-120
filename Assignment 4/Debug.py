@@ -1,45 +1,35 @@
-
-def printHello():
+def print_hello():
     print("Hello")
-    
-def printName(x):
+
+
+def print_name(x):
     print(x)
-    
+
+
 def addition(x, y):
-    #add x and y together and return them
-    return(x + y)
+    return x + y
+
 
 def smaller(i, j):
     if i < j:
-        return(i)
+        return i
     elif j < i:
-        return(j)
+        return j
     elif i == j:
-        return(0)
-    #if i is smaller than j, return i
-    #if j is smaller than i, return j
-    #if they're even, return 0
+        return 0
+
 
 def main():
-    printHello()
-    printName("Julia")
-    #call the printHello function here
-    
-    #call printName and give it the parameter of your name
-    
-    var1= 10
-    var2= 20
-    #What do we put in here to make it work?
+    print_hello()
+    print_name("Julia")
+
+    var1 = 10
+    var2 = 20
     print(addition(var1, var2))
-    
+
     num1 = int(input("Enter number 1"))
     num2 = int(input("Enter number 2"))
-    #what go here?
     print(smaller(num1, num2))
-
-
-
-
 
 
 main()

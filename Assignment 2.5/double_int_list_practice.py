@@ -1,41 +1,38 @@
 def main():
-  
-  #set this to any double
-  doubleValue = 18.5
-  
-  #set this to any int
-  intValue = 17
-  
-  #print out addition, subtraction, multiplication, and division of these two values
+    # a variable with the value of a double
+    double_value = 18.5
 
-  print(doubleValue + intValue)
-  print(doubleValue - intValue)
-  print(doubleValue * intValue)
-  print(intValue / doubleValue)
+    # a variable with the value of an integer
+    int_value = 17
 
-  
-  #populate this list
-  myFriends = ["Grace M", "Grace H", "Hannah G", "Hannah P", "Jasmine E", "Jasmine Z", "Josh S", "Jackson S", "Ryan K"]
-  
-  #print out your friends at index 2 and index 3
-  print(myFriends[2], "and", myFriends[3])
-  
-  #populate this list with five numbers
-  fiveNumbers = [1, 28, 8, 4, 21]
-  
-  #do each of the four equations with different numbers each time.
-  print(fiveNumbers[0] + fiveNumbers[3])
-  print(fiveNumbers[0] - fiveNumbers[3])
-  print(fiveNumbers[0] * fiveNumbers[3])
-  print(fiveNumbers[0] / fiveNumbers[3])
+    # prints out addition, subtraction, multiplication, and division of these two values
+    print(double_value + int_value)
+    print(double_value - int_value)
+    print(double_value * int_value)
+    print(int_value / double_value)
 
-  #now replace two of the numbers in the list with a different number (using name of list[x] = ?, not rewriting the fiveNumber list)
+    # list of friends
+    my_friends = ["Grace M", "Grace H", "Hannah G", "Hannah P", "Jasmine E", "Jasmine Z", "Josh S", "Jackson S",
+                  "Ryan K"]
 
-  fiveNumbers.insert(4, 0)
-  fiveNumbers.remove(21)
+    # prints out friends at index 2 and index 3
+    print(my_friends[2], "and", my_friends[3])
+
+    # list of five numbers
+    five_numbers = [1, 28, 8, 4, 21]
+
+    # prints four equations that use numbers from five_numbers
+    print(five_numbers[0] + five_numbers[3])
+    print(five_numbers[1] - five_numbers[4])
+    print(five_numbers[2] * five_numbers[3])
+    print(five_numbers[1] / five_numbers[3])
+
+    # replaces two of the numbers in the list with a different number
+    five_numbers.insert(4, 0)
+    five_numbers.remove(21)
+
+    # prints out the list
+    print(five_numbers)
 
 
-  #print out the list
-  print(fiveNumbers)
-  
 main()
