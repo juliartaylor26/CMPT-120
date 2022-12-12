@@ -4,10 +4,10 @@ def redo():
         answer = str(answer)
         if answer == "yes":
             return main()
-            return choice()
         elif answer == "no":
             print("Goodbye!")
     else:
+        print("Invalid Input.")
         return redo()
 
 
@@ -65,7 +65,7 @@ def main():
                                                                                                 "friend') or neither "
                                                                                                 "(input 'tell "
                                                                                                 "neither'.")
-
+    choice()
 
 def choice():
     user_choice = input("What do you choose?")
@@ -188,6 +188,3 @@ def choice():
 
 main()
 
-choice()
-
-redo()
